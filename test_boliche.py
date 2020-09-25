@@ -25,6 +25,6 @@ class TestBoliche:
     # def test_spare_score_16(self):
     #     result = 16
     #     input_score = list_input()
-    #     score = boliche_game(input_score)
+    #     score = boliche.play_score()
     #     assert result == score
     
