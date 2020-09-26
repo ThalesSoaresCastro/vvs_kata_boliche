@@ -10,7 +10,7 @@ class TestBoliche:
 
     @pytest.fixture(scope='function')
     def boliche(self):
-        return Boliche()
+        return Boliche(21)
 
     def test_score_all_0(self, boliche):
         result = 0

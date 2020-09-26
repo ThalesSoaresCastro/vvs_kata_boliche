@@ -1,6 +1,6 @@
 class Boliche:
-    def __init__(self):
-        self.plays_game = [0 for i in range(21)]
+    def __init__(self, size_arr):
+        self.plays_game = [0 for i in range(size_arr)]
         self.actual_played = 0
 
     def play_score(self):

@@ -1,0 +1,1 @@
+mut.py --target boliche.py --runner pytest --unit-test test_boliche.py -m --report-html report_mutant_test

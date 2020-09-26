@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MutPy mutation report - mutation #35</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    window.setTimeout(function () {
+        
+        $('.line.number35').attr('title', 'CRP');
+        
+    }, 0);
+</script>
+
+</head>
+<body>
+    <div class="container">
+        
+<div class="page-header">
+    <h1>Mutation #35</h1>
+</div>
+<h3>Details</h3>
+<ul>
+    <li>module - <code><module 'boliche' from '/home/thales/Documentos/Desenvolvimento/faculdade/VVS2020/kata_boliche/boliche.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_boliche.py::TestBoliche::test_spare_score_16</code></li>
+    
+    <li>duration - 0.123 s</li>
+    
+    
+    <li>tests run - 3</li>
+    
+</ul>
+
+<h3>Exception traceback</h3>
+<pre>self = <test_boliche.TestBoliche object at 0x7fa913c32f90>, boliche = <boliche.Boliche object at 0x7fa913c32f10>
+
+    def test_spare_score_16(self, boliche):
+        result = 16
+        """
+            Rolando o spare:
+                chama play() com valor 5 duas vezes seguidas
+                e em seguida chama o play() mais uma vez mas com valor 3.
+        """
+        play_array_boliche(boliche,[5,5,3])
+        score = boliche.play_score()
+>       assert result == score
+E       AssertionError
+
+test_boliche.py:36: AssertionError</pre>
+
+<h3>Mutations</h3>
+<ul>
+    
+    <li>CRP - line 35</li>
+    
+</ul>
+<h3>Mutant</h3>
+<pre class="brush: python; first-line: 1; highlight: [35]; toolbar: false;">class Boliche:
+    def __init__(self, size_arr):
+        self.plays_game = [0 for i in range(size_arr)]
+        self.actual_played = 0
+    
+    def play_score(self):
+        [sum_value, index] = [0, 0]
+        
+        for i in range(0, 10):
+            
+            if self.strike_verify(index):
+                sum_value += 10 + self.strike_frame_sum(index)
+                index += 1
+            
+            elif self.spare_verify(index):
+                sum_value += 10 + self.spare_frame_sum(index)
+                index += 2
+            else:
+                
+                sum_value += self.ball_frame_sum(index)
+                index += 2
+        
+        return sum_value
+    
+    def ball_frame_sum(self, index):
+        return self.plays_game[index] + self.plays_game[index + 1]
+    
+    def strike_frame_sum(self, index):
+        return self.plays_game[index + 1] + self.plays_game[index + 2]
+    
+    def spare_frame_sum(self, index):
+        return self.plays_game[index + 2]
+    
+    def spare_verify(self, frame):
+        return self.plays_game[frame] + self.plays_game[frame + 2] == 10
+    
+    def strike_verify(self, frame):
+        return self.plays_game[frame] == 10
+    
+    def play(self, value):
+        self.plays_game[self.actual_played] = value
+        self.actual_played += 1</pre>
+
+    </div>
+</body>
+</html>
