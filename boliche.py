@@ -12,7 +12,7 @@ class Boliche:
         for i in range(0, 10):
 
             if self.strike_verify(index):
-                sum_value = 10+self.strike_frame_sum(index)
+                sum_value += 10 + self.strike_frame_sum(index)
                 index+=1
 
             elif self.spare_verify(index) :
