@@ -1,7 +1,4 @@
-
 class Boliche:
-    #plays_game = [0 for i in range(21)]
-    #actual_played = 0
     def __init__(self):
         self.plays_game = [0 for i in range(21)]
         self.actual_played = 0
