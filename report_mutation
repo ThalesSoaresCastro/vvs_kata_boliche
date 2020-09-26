@@ -1,0 +1,674 @@
+coverage:
+  all_nodes: 271
+  covered_nodes: 271
+mutation_score: 100.0
+mutations:
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528b89a90>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528b89950>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: &id001 !!python/module:boliche ''
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: -2
+  time: 0.13199639320373535
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528c07c50>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528d39350>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: -1
+  time: 0.11900472640991211
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528c07dd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528c07bd0>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.11610198020935059
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528c47ed0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528bf9310>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.11495542526245117
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528cefe10>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528ba5350>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: -2
+  time: 0.11848807334899902
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528be5610>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528be53d0>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: -2
+  time: 0.1176445484161377
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528da8690>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528da8490>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: -2
+  time: 0.12668132781982422
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528be5890>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528be5350>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: -1
+  time: 0.11739563941955566
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528c07c50>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528c0d510>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 3
+  time: 0.1311197280883789
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528be9110>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528be9210>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 3
+  time: 0.1271679401397705
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528cefcd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528cef8d0>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: ASR
+  number: 11
+  status: killed
+  tests_run: -2
+  time: 0.1353437900543213
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45287993d0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528799490>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ASR
+  number: 12
+  status: killed
+  tests_run: -2
+  time: 0.1550583839416504
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452871a110>,\
+    \ boliche = <boliche.Boliche object at 0x7f45286eb210>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: ASR
+  number: 13
+  status: killed
+  tests_run: -1
+  time: 0.12298274040222168
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45286f6d50>,\
+    \ boliche = <boliche.Boliche object at 0x7f45286f1a90>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: ASR
+  number: 14
+  status: killed
+  tests_run: -1
+  time: 0.1251976490020752
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528707450>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528707050>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: ASR
+  number: 15
+  status: killed
+  tests_run: 2
+  time: 0.12312865257263184
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45286f6e50>,\
+    \ boliche = <boliche.Boliche object at 0x7f45286f1a10>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: ASR
+  number: 16
+  status: killed
+  tests_run: 2
+  time: 0.13431024551391602
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45286f6f50>,\
+    \ boliche = <boliche.Boliche object at 0x7f45287766d0>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: ASR
+  number: 17
+  status: killed
+  tests_run: 2
+  time: 0.12285900115966797
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45286f1150>,\
+    \ boliche = <boliche.Boliche object at 0x7f45286f15d0>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:19: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: COI
+  number: 18
+  status: killed
+  tests_run: 1
+  time: 0.11265873908996582
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45285e7090>,\
+    \ boliche = <boliche.Boliche object at 0x7f45285f0f10>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:19: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: COI
+  number: 19
+  status: killed
+  tests_run: 1
+  time: 0.12091231346130371
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528707710>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528707850>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: CRP
+  number: 20
+  status: killed
+  tests_run: 3
+  time: 0.12568187713623047
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45284fedd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f452847d750>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: CRP
+  number: 21
+  status: killed
+  tests_run: 2
+  time: 0.11432218551635742
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45284c8dd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f45284c8410>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:19: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: CRP
+  number: 22
+  status: killed
+  tests_run: 1
+  time: 0.11605167388916016
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528b5bfd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528b5bcd0>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: CRP
+  number: 23
+  status: killed
+  tests_run: 2
+  time: 0.1312556266784668
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528423790>,\
+    \ boliche = <boliche.Boliche object at 0x7f45284235d0>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: CRP
+  number: 24
+  status: killed
+  tests_run: 2
+  time: 0.12009882926940918
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528713c10>,\
+    \ boliche = <boliche.Boliche object at 0x7f45287135d0>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n>      \
+    \ score = boliche.play_score()\n\ntest_boliche.py:18: \n_ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nboliche:15: in play_score\n    ???\n_ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <boliche.Boliche\
+    \ object at 0x7f45287135d0>, frame = 20\n\n>   ???\nE   IndexError: list index\
+    \ out of range\n\nboliche:35: IndexError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: CRP
+  number: 25
+  status: killed
+  tests_run: 1
+  time: 0.1156456470489502
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528423cd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528423910>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: CRP
+  number: 26
+  status: killed
+  tests_run: -2
+  time: 0.12645602226257324
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452847a650>,\
+    \ boliche = <boliche.Boliche object at 0x7f452847ad90>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: CRP
+  number: 27
+  status: killed
+  tests_run: -2
+  time: 0.11970877647399902
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452835d950>,\
+    \ boliche = <boliche.Boliche object at 0x7f452835dc90>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: CRP
+  number: 28
+  status: killed
+  tests_run: -1
+  time: 0.1216890811920166
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528357c50>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528357fd0>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 29
+  status: killed
+  tests_run: -1
+  time: 0.11188340187072754
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452827e410>,\
+    \ boliche = <boliche.Boliche object at 0x7f452827e3d0>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n>      \
+    \ score = boliche.play_score()\n\ntest_boliche.py:18: \n_ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nboliche:11: in play_score\n    ???\n_ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <boliche.Boliche\
+    \ object at 0x7f452827e3d0>, frame = 21\n\n>   ???\nE   IndexError: list index\
+    \ out of range\n\nboliche:38: IndexError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 30
+  status: killed
+  tests_run: 1
+  time: 0.10877776145935059
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528248fd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528248850>\n\n    def test_score_all_1(self,\
+    \ boliche):\n        result = 20\n        play_boliche(boliche,1,20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:25: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_1
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: CRP
+  number: 31
+  status: killed
+  tests_run: 2
+  time: 0.11679744720458984
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452825f450>,\
+    \ boliche = <boliche.Boliche object at 0x7f45282c32d0>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 32
+  status: killed
+  tests_run: -2
+  time: 0.1160273551940918
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452818a0d0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528335e50>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 33
+  status: killed
+  tests_run: -2
+  time: 0.11853265762329102
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528227cd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f4528227e10>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: CRP
+  number: 34
+  status: killed
+  tests_run: -1
+  time: 0.12279510498046875
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452814ca10>,\
+    \ boliche = <boliche.Boliche object at 0x7f452814cc90>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 35
+  status: killed
+  tests_run: 3
+  time: 0.12457823753356934
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528581c50>,\
+    \ boliche = <boliche.Boliche object at 0x7f45285819d0>\n\n    def test_spare_score_16(self,\
+    \ boliche):\n        result = 16\n        \"\"\"\n            Rolando o spare:\n\
+    \                chama play() com valor 5 duas vezes seguidas\n              \
+    \  e em seguida chama o play() mais uma vez mas com valor 3.\n        \"\"\"\n\
+    \        play_array_boliche(boliche,[5,5,3])\n        score = boliche.play_score()\n\
+    >       assert result == score\nE       AssertionError\n\ntest_boliche.py:36:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_spare_score_16
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 36
+  status: killed
+  tests_run: 3
+  time: 0.13437867164611816
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4528161fd0>,\
+    \ boliche = <boliche.Boliche object at 0x7f45281c31d0>\n\n    def test_strike_score_24(self,\
+    \ boliche):\n        result = 24\n        \"\"\"\n            Teste de Strike:\n\
+    \            -Primeira chamada do m\xE9todo play() com valor 10;\n           \
+    \ -Segunda chamada do m\xE9todo play() com valor 3;\n            -Terceira chamada\
+    \ do m\xE9todo play() com valor 4;\n    \n        \"\"\"\n        play_array_boliche(boliche,[10,\
+    \ 3, 4])\n        play_boliche(boliche,0,16)\n        score = boliche.play_score()\n\
+    \    \n>       assert result == score\nE       AssertionError\n\ntest_boliche.py:51:\
+    \ AssertionError"
+  killer: test_boliche.py::TestBoliche::test_strike_score_24
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 37
+  status: killed
+  tests_run: 4
+  time: 0.12501907348632812
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f45283eea90>,\
+    \ boliche = <boliche.Boliche object at 0x7f45283eeb90>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n>       play_boliche(boliche,0, 20)\n\ntest_boliche.py:17:\
+    \ \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_boliche.py:5:\
+    \ in <lambda>\n    play_boliche = lambda b,x,arr_size: [b.play(x) for i in range(arr_size)]\n\
+    test_boliche.py:5: in <listcomp>\n    play_boliche = lambda b,x,arr_size: [b.play(x)\
+    \ for i in range(arr_size)]\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ \n\nself = <boliche.Boliche object at 0x7f45283eeb90>, value = 0\n\n>  \
+    \ ???\nE   IndexError: list assignment index out of range\n\nboliche:41: IndexError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: CRP
+  number: 38
+  status: killed
+  tests_run: 1
+  time: 0.13124895095825195
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f452800e490>,\
+    \ boliche = <boliche.Boliche object at 0x7f452800e3d0>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:19: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: ROR
+  number: 39
+  status: killed
+  tests_run: 1
+  time: 0.12410449981689453
+- exception_traceback: "self = <test_boliche.TestBoliche object at 0x7f4527fd8550>,\
+    \ boliche = <boliche.Boliche object at 0x7f4527fd8ed0>\n\n    def test_score_all_0(self,\
+    \ boliche):\n        result = 0\n        play_boliche(boliche,0, 20)\n       \
+    \ score = boliche.play_score()\n>       assert result == score\nE       AssertionError\n\
+    \ntest_boliche.py:19: AssertionError"
+  killer: test_boliche.py::TestBoliche::test_score_all_0
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: ROR
+  number: 40
+  status: killed
+  tests_run: 1
+  time: 0.12962770462036133
+number_of_tests: 5
+targets:
+- boliche.py
+tests:
+- name: test_boliche
+  target: null
+  time: 0.10099220275878906
+time_stats:
+  create_mutant_module: 0.016831398010253906
+  create_target_ast: 0.00370025634765625
+  mutate_module: 10.049293041229248
+  run_tests_with_mutant: 7.459080934524536
+total_time: 10.15138030052185
